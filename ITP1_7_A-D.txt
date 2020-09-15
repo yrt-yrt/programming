@@ -1,0 +1,118 @@
+#include <stdio.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+/*int main()
+{
+	int m,f,r;
+	char c;
+	for(;;)
+	{
+		scanf("%d%d%d",&m,&f,&r);
+		if(m==-1&&f==-1&&r==-1)
+		break;
+		if(m+f>=80)
+        c='A';
+        if((m+f)<80&&(m+f)>=65)
+        c='B';
+        if((m+f)<65&&(m+f)>=50)
+        c='C';
+        if((m+f)<50&&(m+f)>=30)
+        {
+        	if(r>=50)
+        	{
+        		c='C';
+			}
+			else
+			c='D';
+		}
+		if((m+f)<30||m==-1||f==-1)
+		{
+		    c='F';
+	    }
+	    printf("%c",c);
+    }
+}*/
+/*int main()
+{
+	int n,x,i,j,k;
+	for(;;)
+	{
+		k=0;
+		scanf("%d%d",&n,&x);
+		if(n==0&&x==0)
+		break;
+		for(i=1;i<=n;i++)
+		{
+			for(j=i+1;j<=n;j++)
+			{
+				if((x-i-j)>j&&(x-i-j)<=n)
+				k++;
+			}
+		}
+		printf("%d",k);
+	}
+}*/
+/*int main()
+{
+	int r,c,i,j;
+	scanf("%d%d",&r,&c);
+	int a[100][100];
+    for(i=0;i<r;i++)
+    {
+    	for(j=0;j<c;j++)
+    	{
+    		scanf("%d",&a[i][j]);
+    		a[i][c]+=a[i][j]; 
+		}
+	}
+	for(i=0;i<c+1;i++)
+	{
+		for(j=0;j<r;j++)
+		{
+			a[r][i]+=a[j][i];
+		}
+	}
+	for(i=0;i<r+1;i++)
+	{
+		for(j=0;j<c+1;j++)
+		{
+			printf("%d ",a[i][j]);
+		}
+		puts("");
+	}
+}*/
+/*int main()
+{
+	int n,m,i,j,k,l;
+	scanf("%d %d %d",&n,&m,&l);
+	int a[100][100];
+	int b[100][100];
+	int c[100][100]={0};
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<m;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	for(k=0;k<m;k++)
+	{
+		for(i=0;i<l;i++)
+		{
+		    scanf("%d",&b[k][i]);
+	    }
+	}
+	for(i=0;i<n;i++)
+	{
+		for(j=0;j<l;j++)
+		{
+			for(k=0;k<m;k++)
+			{
+			    c[i][j]+=a[i][k]*b[k][j];
+		    }
+			printf("%d ",c[i][j]);
+	    }
+	    printf("\n");
+	}
+}*/

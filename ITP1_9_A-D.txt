@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+/*int main()
+{
+	char a[100],b[1200];
+	int sum=0;
+	scanf("%s",a);
+	for(int i=0;strlen(b);i++)
+	{
+		scanf("%s",b);
+		if(strcmp(b,"END_OF_TEXT")==0)
+		break;
+		b[i]=tolower(b[i]);
+		if(strcmp(b,a)==0)
+		sum++;
+	}
+	printf("%d",sum);
+}*/
+/*int main() {
+    char a[201];
+    char c[201] = {},b[201] = {};
+    for(;;) 
+	{
+        scanf("%s",a);
+        if(a[0] == '-')
+        break;
+        int m;
+        scanf("%d",&m);
+        int i;
+        for(i=0;i<m;i++)
+		{
+            int h;
+            scanf("%d",&h);
+            strcpy(c,a+h);    
+			a[h]='\0';             
+            char *s= strcat(c,a);
+            strcpy(a,s);
+        }
+    }
+}*/
+/*int main()
+{
+	int n;
+	scanf("%d",&n);
+	int x=0,y=0;
+	for(int i=0;i<n;i++)
+	{
+		char a[100],b[100];
+		scanf("%s %s",a,b);
+		if(strcmp(a,b)==0)
+		{
+			x++;
+			y++;
+		}
+		else if(strcmp(a,b)<0)
+		{
+			y=y+3;
+		}
+		else if(strcmp(a,b)>0)
+		{
+			x=x+3;
+		}
+	}
+	printf("%d %d",x,y); 
+}*/
+/*int main()
+{
+	char a[1000],b[1000],c[1000],d[1000];
+	scanf("%s",a);
+	int n,x,y,z=0,w=0;
+	char temp;
+	scanf("%d",&n);
+	for(;;)
+	{
+		scanf("%s",b);
+		if(strcmp(b,"replace")==0)
+		{
+			scanf("%d%d",&x,&y);
+			scanf("%s",c);
+			for(int i=x;i<=y;i++)
+			{
+				temp=a[i];
+				a[i]=c[z];
+				c[z]=temp;
+				z++;
+			}
+			z=0;
+		}
+		else if(strcmp(b,"reverse")==0)
+		{
+			scanf("%d%d",&x,&y);
+			for(int j=x;j<=y;j++)
+			{
+				temp=a[j];
+				a[j]=a[y];
+				a[y]=temp;
+				y--;
+			}
+		}
+		else if(strcmp(b,"print")==0)
+		{
+			scanf("%d %d",&x,&y);
+			for(int k=x;k<=y;k++)
+			{
+				d[w]=a[k];
+				w++;
+			}
+			d[w]='\0';
+			printf("%s\n",d);
+			w=0;
+		}
+	}
+}*/

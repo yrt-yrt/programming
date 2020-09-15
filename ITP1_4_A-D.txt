@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+/*int main()
+{
+	int a,b;
+	double c;
+	scanf("%d%d",&a,&b);
+	c=(double)a/(double)b;
+	printf("%d %d %lf",a/b,a%b,c);
+}*/
+/*int main()
+{
+	int r;
+	scanf("%d",&r);
+	printf("%f %f",2*3.1415926535*r,3.1415926535*r*r);
+}*/
+/*int main()
+{
+	int a,b;
+	char c;
+	for(int i=1;;i++)
+	{
+		scanf("%d %c %d",&a,&c,&b);
+		if(c=='+')
+		printf("%d ",a+b);
+		if(c=='-')
+		printf("%d ",a-b);
+		if(c=='*')
+		printf("%d ",a*b);
+		if(c=='/')
+		printf("%d ",a/b);
+	}
+}*/
+/*int main()
+{
+	int n,max,min,sum=0;
+	int a[n];
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(int j=0;j<n;j++)
+	{
+		sum+=a[j];
+		if(a[j]>max)
+		{
+			max=a[j];
+		}
+		if(a[j]<min)
+		{
+			min=a[j];
+		}
+	}
+	printf("%d %d %d",min,max,sum);
+}*/

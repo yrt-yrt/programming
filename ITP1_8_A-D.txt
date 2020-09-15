@@ -1,0 +1,76 @@
+#include <stdio.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+/*int main()
+{
+	char c;
+	for(;;)
+	{
+		scanf("%c",&c);
+		if(islower(c))
+		printf("%c",toupper(c));
+		else if(isupper(c))
+		printf("%c",tolower(c));
+		else
+		printf("%c",c);
+		if(c=='\n')
+		break;
+	}
+}*/
+/*int main()
+{
+	int n,i,a;
+	for(i=0;;i++)
+	{
+		scanf("%d",&n);
+		if(n>=100&&n<1000)
+		{
+			a=n/100+(n%100)/10+(n%100)%10;
+			printf("%d",a);
+		}
+		else if(n>=10&&n<100)
+		{
+			a=n/10+n%10;
+			printf("%d",a);
+		}
+		else if(n==1000)
+		{
+			printf("1");
+		}
+		else
+		printf("%d",n);
+		if(n==0)
+		break;
+	}
+}*/
+/*int main()
+{                                
+	int a[1000]={0};
+	char c;
+	for(;;)
+	{
+		scanf("%c",&c);
+		if(c>='A'&&c<='z')
+		{
+			if(c>='a')
+			a[c-'a']++;
+			else
+			a[c-'A']++;
+		}
+	}
+	for(int j=0;j<26;j++)
+	{
+		printf("%c:%d\n",'a'+j,a[j]);
+	}
+}*/
+/*int main()
+{
+	char a[300],b[100];
+	scanf("%s %s",a,b);
+	sprintf(a,"%s%s",a,a);
+	if(strstr(a,b)==NULL)
+	printf("No\n");
+	else
+	printf("Yes\n");
+}*/

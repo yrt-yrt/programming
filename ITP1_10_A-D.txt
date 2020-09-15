@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include<ctype.h>
+#include<string.h>
+#include<math.h>
+/*int main()
+{
+	double x1=0,y1=0,x2=0,y2=0;
+	double d=0,e=0;
+	scanf("%lf%lf%lf%lf",&x1,&y1,&x2,&y2);
+	d=fabs(x2-x1)*fabs(x2-x1)+fabs(y2-y1)*fabs(y2-y1);
+	e=sqrt(d);
+	printf("%.8lf",e);
+}*/
+/*# define PI 3.1415926235897932
+int main()
+{
+	int a,b,c;
+	double s,l,h;
+	scanf("%d%d%d",&a,&b,&c);
+	s=a*b*sin(c*PI/180.0)/2;
+	l=a+b+sqrt(a*a+b*b-2*a*b*cos(c*PI/180));
+	h=2*s/a;
+	printf("%lf %lf %lf",s,l,h);
+}*/
+/*int main()
+{
+	int n;
+	double m,c,sum=0,sum1=0;
+	int a[n];
+	for(;;)
+	{
+	    scanf("%d",&n);
+	    if(n==0)
+	    break;
+	    sum=0;
+	    sum1=0;
+		for(int i=0;i<n;i++)
+	    {
+		    scanf("%d",&a[i]);
+		    sum+=a[i];
+	    }
+	    m=sum/n;
+	    for(int j=0;j<n;j++)
+	    {
+		    sum1+=(a[j]-m)*(a[j]-m);
+	    }
+	    c=sqrt(sum1/n);
+	    printf("%lf\n",c);
+    }  
+}*/
+/*int main()
+{
+	int n;
+	int a[n],b[n],c[n];
+	double sum1=0,sum2=0,sum3=0,m;
+	scanf("%d",&n);
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(int j=0;j<n;j++)
+	{
+		scanf("%d",&b[j]);
+	}
+	for(int k=0;k<n;k++)
+	{
+		c[k]=fabs(a[k]-b[k]);
+		if(k==0) 
+		m=c[0];
+		else 
+		{
+			if(c[k]>m) 
+			m=c[k];
+		}
+		sum1+=c[k];
+		sum2+=c[k]*c[k];
+		sum3+=c[k]*c[k]*c[k];
+	}
+	sum2=pow(sum2,1.0/2.0);
+	sum3=pow(sum3,1.0/3.0);
+	printf("%lf%lf%lf%lf",sum1,sum2,sum3,m);
+}*/
